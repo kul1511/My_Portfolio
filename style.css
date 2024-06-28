@@ -268,18 +268,19 @@ nav button#menuButton{
 }
 
 .portfolio .portfo-items .item img{
+    padding: 4px;
     width: 100%;
     height: 240px;
     object-fit: cover;
     object-position: top;
-    border-radius: 10px 10px 20px 20px;
+    border-radius: 12px;
 }
 
 .portfolio .portfo-items .item .info{
     display: flex;
     flex-direction: column;
     gap: 14px;
-    padding: 20px 32px 42px;
+    padding: 2px 20px 20px;
 }
 
 .portfolio .portfo-items .item .info p{
@@ -453,4 +454,62 @@ footer .bottom .links a{
     .portfolio .portfo-items{
         gap:19px;
     }
+}
+
+
+@media screen and (max-width: 440px){
+    nav{
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+    
+    nav ul{
+        display: none;
+    }
+    
+    nav.open .logo{
+        display: none;
+    }
+    
+    nav.open ul{
+        display: flex;
+    }
+    
+    nav button#menuButton{
+        display: flex;
+    }
+    .main{
+        padding :42px;
+    }
+    .skills{
+        padding:85px 42px 0;
+    }
+    .skills .skill-items{
+        gap:6px;
+    }
+    .skills .skill-items .item {
+        width: 100%;
+    }
+
+    .about{
+        padding:85px 42px ;
+    }
+    .portfolio{
+        padding: 60px 42px;
+    }
+    .portfolio .portfo-items{
+        gap:12px;
+    }
+    footer {
+        background-color: #deebee;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .logo a {
+        margin-left: 8px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
 }
